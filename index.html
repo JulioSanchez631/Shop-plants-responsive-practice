@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plant en un clic</title>
+  <link href="Estilos/style.css" rel="stylesheet">
+
+  <!-- Fuentes de GOOGLE FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+  <!-- Icono de la pagina web -->
+  <link rel="icon" href="Imagenes/LogoSimplificado.png" type="image/x-icon">
+
+</head>
+<body>
+
+  <section class="Cabecera">
+    <a href="#">
+      <img src="Imagenes/LogoSimplificado.png">
+    </a>
+
+    <nav class="Main-nav">
+
+      <ul class="List-Nav-Main">
+        <li><a href="#" class="Item-Nav-Main">Inicio</a></li>
+        <li><a href="#" class="Item-Nav-Main">Productos</a></li>
+        <li><a href="#" class="Item-Nav-Main">Contactos</a></li>
+      </ul>
+
+    </nav>
+  </section>
+
+  <section class="Sect-main">
+    <img src="Imagenes/Img-fondo-main.jpg">
+
+    <div class="contenido-sect-main">
+      
+      <h1>Plantas de calidad</h1>
+    
+      <p>El lugar indicado para llenar de naturaleza tu vida</p>
+
+    </div>
+  </section>
+
+  <h2 class="second-title">Productos</h2>
+
+  <section class="Sect-products">
+
+    <div class="items-products separacion">
+      <img class="img_producto" src="Imagenes/planta_cempasuchil.avif">
+
+      <h3 class="separacion">Planta cempasuchil</h3>
+
+      <div class="stars separacion">
+        <img class="items-starts" src="Imagenes/estrella_sin_relleno.png">
+        <img class="items-starts" src="Imagenes/estrella_sin_relleno.png">
+        <img class="items-starts" src="Imagenes/estrella_sin_relleno.png">
+        <img class="items-starts" src="Imagenes/estrella_sin_relleno.png">
+        <img class="items-starts" src="Imagenes/estrella_sin_relleno.png">
+      </div>
+
+      <span class="price separacion">$200 c/u</span>
+
+      <button class="btn_buy separacion">Comprar</button>
+    </div>
+
+
+    <div class="items-products separacion">
+      <img class="img_producto" src="Imagenes/Orquidea.avif">
+
+      <h3 class="separacion">Planta Orquidea</h3>
+
+      <div class="stars separacion">
+        <img class="items-starts" src="Imagenes/estrella_con_relleno.png">
+        <img class="items-starts" src="Imagenes/estrella_con_relleno.png">
+        <img class="items-starts" src="Imagenes/estrella_con_relleno.png">
+        <img class="items-starts" src="Imagenes/estrella_con_relleno.png">
+        <img class="items-starts" src="Imagenes/estrella_sin_relleno.png">
+      </div>
+
+      <span class="price separacion">$179 c/u</span>
+
+      <button class="btn_buy separacion">Comprar</button>
+    </div>
+
+
+    <div class="items-products separacion">
+      <img class="img_producto" src="Imagenes/bugambilia.avif">
+
+      <h3 class="separacion">Planta bugambilia</h3>
+
+      <div class="stars separacion">
+        <img class="items-starts" src="Imagenes/estrella_con_relleno.png">
+        <img class="items-starts" src="Imagenes/estrella_con_relleno.png">
+        <img class="items-starts" src="Imagenes/estrella_con_relleno.png">
+        <img class="items-starts" src="Imagenes/estrella_con_relleno.png">
+        <img class="items-starts" src="Imagenes/estrella_con_relleno.png">
+      </div>
+
+      <span class="price separacion">$199 c/u</span>
+
+      <button class="btn_buy separacion">Comprar</button>
+    </div>
+
+
+    <div class="items-products separacion">
+      <img class="img_producto" src="Imagenes/bromelia.avif">
+
+      <h3 class="separacion">Planta bromelia</h3>
+
+      <div class="stars separacion">
+        <img class="items-starts" src="Imagenes/estrella_sin_relleno.png">
+        <img class="items-starts" src="Imagenes/estrella_sin_relleno.png">
+        <img class="items-starts" src="Imagenes/estrella_sin_relleno.png">
+        <img class="items-starts" src="Imagenes/estrella_sin_relleno.png">
+      </div>
+
+      <span class="price separacion">$199 c/u</span>
+
+      <button class="btn_buy separacion">Comprar</button>
+    </div>
+
+  </section>
+
+  <section class="sect-contacto">
+
+    <h2>Contactanos</h2>
+    
+    <!-- action="#" ya que no tengo una URL a donde enviar los datos de este formulario, entonces coloco solo un # para dejar en claro que debe de estar dicho atributo. -->
+    <form action="#" class="form-contact" method="POST">
+      <div class="inputs-contact-main">
+        <input type="text" name="nombre_cliente" class="size_default_inputs_contact style-inputs-contact" placeholder="Nombre">
+        <input type="text" name="apellido_cliente" class="size_default_inputs_contact style-inputs-contact" placeholder="Apellido">
+        <input type="text" name="e-mail_cliente" class="size_default_inputs_contact style-inputs-contact" placeholder="E-mail">
+        <input type="text" name="telefono_cliente" class="size_default_inputs_contact style-inputs-contact" placeholder="Telefono">
+      </div>
+      <textarea class="size_big_inputs_contact style-inputs-contact" placeholder="Coloca comentarios adicionales aquí"></textarea>
+    
+      <input class="enviar-contact" type="submit" value="Enviar formulario">
+    
+    </form>
+
+  </section>
+
+  <footer>
+
+
+      <img class="separacion" src="Imagenes/Logo-ver2.png">
+      <div class="footer-nav">
+        <li class="separacion"><a href="#" class="Item-Nav-Footer">Inicio</a></li>
+        <li class="separacion"><a href="#" class="Item-Nav-Footer">Productos</a></li>
+        <li class="separacion"><a href="#" class="Item-Nav-Footer">Contactos</a></li>
+      </div>
+
+    <div class="container-social-media separacion">
+      <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+      <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+      <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+      <a href="#"><ion-icon name="logo-pinterest"></ion-icon></a>
+      <a href="#"><ion-icon name="logo-youtube"></ion-icon></a>
+    </div>
+
+    <div class="container-polits-and-copyright">
+      <a class="polits_and_copyright separacion" href="#">Politicas de privacidad</a>
+
+      <p class="polits_and_copyright separacion">@2024 Plant en un clic, LLC. All Rights Reserved.</p>
+    </div>
+
+  </footer>
+
+  <!-- FALTA TERMINAR EL PIDE DE PAGINA, COLOCAR LOGO EN LA PESTAÑA DE LA PAGINA(ETIQUETA HEAD) Y HACER LA VERSION PARA PC. -->
+
+
+  <!-- Iconos de Ionic -->
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

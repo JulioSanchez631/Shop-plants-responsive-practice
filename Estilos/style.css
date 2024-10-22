@@ -1,0 +1,328 @@
+*{
+  margin:0;
+  padding:0;
+}
+
+/* Uso GENERAL de propiedades para todas la secciones */
+
+h1, h2, h3{
+  font-family:"Roboto", sans-serif;
+  font-weight: 700;
+}
+
+.separacion{
+  margin-bottom:22px;
+}
+
+/* Cabecera de la página */
+
+.Cabecera{
+  width: 96.5%;
+  padding:10px 0px 10px 10px;
+  display:flex;
+  flex-direction:row;
+  justify-content: space-between;
+}
+
+img[src="Imagenes/LogoSimplificado.png"]{
+  width: 70px;
+}
+
+.Main-nav{
+  display:flex;
+  align-items: center;
+
+}
+
+.List-Nav-Main{
+  list-style: none;
+  display:flex;
+  justify-content: center;
+}
+
+.Item-Nav-Main{
+  Color:black;
+  font-weight: 700;
+  margin:0px 2px;
+  text-decoration:none;
+  font-family:Arial, Helvetica, sans-serif;
+  padding:8px;
+  border-radius:18px;
+}
+
+.Item-Nav-Main:hover{
+  color:white;
+  background-color: #588157;
+}
+
+/* Sección principal de Presentación */
+
+.Sect-main{
+  height: 98vh;
+
+}
+
+.contenido-sect-main{
+  position: absolute;
+  top:50%;
+  text-align: center;
+  width: 100%;
+  color:white;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contenido-sect-main h1{
+  font-size:36px;
+  margin-bottom:20px;
+}
+
+.contenido-sect-main p{
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 300;
+}
+
+
+
+img[src="Imagenes/Img-fondo-main.jpg"]{
+  height: 100vh;
+  width: 100vw;
+  object-fit: cover;
+  filter:blur(3px);
+  position:absolute;
+  z-index:0;
+}
+
+/* Sección de Productos */
+
+.Sect-products{
+  display:flex;
+  flex-direction:column;
+  align-items: center;
+  background-color:#f1f1f1;
+}
+
+.second-title{
+  padding:40px 0;
+  text-align:center;
+  font-size:28px;
+  background-color:#F1F1F1;
+}
+
+.items-products{
+  width: 80%;
+  padding:10px;
+  border-radius:12px;
+  display:flex;
+  flex-direction:column;
+  align-items: center;
+  background-color: white;
+}
+
+.items-starts{
+  width: 14px;
+  height: 14px;
+}
+
+.img_producto{
+  width: 200px;
+}
+
+.price{
+  color:#344E41;
+  font-family:"Roboto", sans-serif;
+  font-weight: 600;
+  font-size:20px;
+}
+
+.btn_buy{
+  padding:8px 22px;
+  border-radius:8px;
+  border:solid #344E41 1px;
+  color:#344E41;
+  background-color:#DAD7CD;
+}
+
+.btn_buy:hover{
+  background-color:#344E41;
+  color:white;
+
+}
+
+/* Seccion de contacto */
+
+.sect-contacto{
+  background-color:#3A5A40;
+  color:white;
+}
+
+.sect-contacto h2{
+  padding:20px;
+  text-align: center;
+}
+
+.form-contact{
+  padding:18px;
+  background-color:#A3B18A;
+  display:flex;
+  flex-direction:column;
+  align-items: center;
+}
+
+.inputs-contact-main{
+  display:flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+  justify-content: center;
+}
+
+.size_default_inputs_contact{
+  width: 160px;
+  margin:5px 6px;
+  padding:8px;
+}
+
+.size_big_inputs_contact{
+  margin:5px 0;
+  width: 90vw;
+  height: 100px;
+  font-family:Arial, Helvetica, sans-serif;
+  padding:4px;
+
+}
+
+.style-inputs-contact{
+  border-radius:10px;
+  border:1px solid transparent;
+
+}
+
+.style-inputs-contact:hover{
+  outline:none;
+  border:1px solid #3A5A40;
+}
+
+.enviar-contact{
+  background-color: #3A5A40;
+  color:white;
+  font-size:14px;
+  border:none;
+  padding:10px 40px;
+  margin:10px 0px;
+  border-radius:8px;
+}
+
+/* Sección de Footer */
+
+footer{
+  background-color:#344E41;
+  display:flex;
+  flex-direction: column;
+  align-items:center;
+}
+
+footer li{
+  list-style: none;
+}
+
+img[src="Imagenes/Logo-ver2.png"]{
+  margin-top:12px;
+}
+
+.Item-Nav-Footer{
+  text-decoration: none;
+  font-size:20px;
+  font-family:Arial, Helvetica, sans-serif;
+  color:white;
+}
+
+.container-social-media{
+  width: 200px;
+  display:flex;
+  justify-content: space-between;
+}
+
+.container-social-media a{
+  color:#fff;
+  font-size:20px;
+}
+
+.polits_and_copyright{
+  color:#dfdede;
+  text-decoration:none;
+  font-size:16px;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+img[src="Imagenes/Logo-ver2.png"]{
+  width: 80px;
+}
+
+/* MEDIA QUERIES PARA LA VERSION EN PC */
+
+@media screen and (min-width:990px){
+
+  /* Seccion de presentacion */
+
+  .contenido-sect-main h1{
+    font-size:54px;
+  }
+
+  .contenido-sect-main p{
+    font-size:18px;
+  }  
+
+  /* Seccion de productos */
+
+  .Sect-products{
+    flex-direction:row;
+    width: 100%;
+    flex-wrap:wrap;
+    justify-content: space-around;
+  }
+
+  .second-title{
+    font-size:34px;
+  }
+
+  .items-products{
+    min-width: 250px;
+    max-width: 400px;
+  }
+
+  /* Sección de contacto */
+
+  .size_big_inputs_contact{
+    width: 730px;
+  }
+
+  /* Sección de footer */
+
+  footer{
+    flex-direction:row;
+    justify-content:space-evenly;
+    padding:20px;
+  }
+
+  .container-social-media{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    width: 50px;
+  }
+
+  .container-social-media a{
+    margin-bottom:10px;
+    font-size:30px;
+  }
+
+  .container-polits-and-copyright{
+
+  }
+
+  img[src="Imagenes/LogoSimplificado.png"]{
+    width: 100px;
+  }
+
+}
